@@ -1,0 +1,153 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+/* Navbar Styles */
+.nav_body {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 0 5%;
+    position: fixed;
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.nav_body.active {
+    background-color: #00403c;
+    border-radius: 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    display: inline-block;
+}
+
+.logo .abbr,
+.logo .full {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.logo .abbr {
+    opacity: 1;
+    animation: showAbbr 0.5s forwards;
+}
+
+.logo:hover .full {
+    animation: showFull 0.5s forwards;
+}
+
+@keyframes showAbbr {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes showFull {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Navigation Item Styles */
+.nav_item {
+    display: inline;
+    transition: all 0.2s ease-in;
+    font-size: 1rem;
+}
+
+
+.nav_item:hover {
+    transform: scale(1.05);
+}
+
+.nav_item a:hover {
+    color: #00ffff;
+    text-shadow: 0px 0px 30px #00ffff;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/* Navigation Container Styles */
+.nav_container {
+    display: flex;
+    gap: 12%;
+    justify-content: flex-end;
+}
+
+/* Menu Toggle Button */
+.menu_toggle {
+    display: none; /* Hide by default */
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav_body.active{
+        margin-top: 0;
+        border-radius: 0;
+    }
+    .nav_container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #00403c; /* Matching active background color */
+        padding: 10px 0;
+        gap: 0;
+    }
+
+    .nav_container.active {
+        display: flex;
+    }
+
+    .nav_item {
+        padding: 10px 25px;
+    }
+
+    .nav_item a {
+        display: block;
+       width: 100%;
+    }
+
+    .nav_item:last-child {
+        border-bottom: none;
+    }
+
+    .menu_toggle {
+        display: block; /* Show on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2em;
+    }
+}

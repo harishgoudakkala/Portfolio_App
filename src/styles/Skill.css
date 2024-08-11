@@ -1,0 +1,317 @@
+
+li {
+    list-style-type: none;
+    font-family: sans-serif;
+}
+
+.skills {
+    width: 450px;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    margin: 20px;
+    padding: 10px 30px 30px;
+    background: rgba(0, 0, 0, 0.208);
+    border-radius: 20px;
+    transition: transform 0.6s;
+    font-size: 0.9rem;
+}
+
+.sub-heading{
+    font-size: 1.25rem;
+    text-align: center;
+    /* border-block-width: 1px; */
+    border-width: 1px;
+    padding: 1rem;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+/* .skills:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+} */
+
+.skills li {
+    margin: 20px 0;
+}
+
+.skillsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.bar {
+    background-color: rgb(69, 18, 0);
+    display: block;
+    height: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    box-shadow: 0 0 10px #008179;
+}
+
+.bar span {
+    height: 4px;
+    float: left;
+    background-color: orangered;
+}
+
+.react {
+    width: 65%;
+    animation: react 2s;
+}
+
+.express {
+    width: 60%;
+    animation: express 2s;
+}
+
+.node {
+    width: 70%;
+    animation: node 2s;
+}
+
+.mongodb {
+    width: 60%;
+    animation: mongodb 2s;
+}
+
+.mysql {
+    width: 70%;
+    animation: mysql 2s;
+}
+
+.nginx {
+    width: 50%;
+    animation: nginx 2s;
+}
+
+.azure {
+    width: 45%;
+    animation: azure 2s;
+}
+
+.devops {
+    width: 40%;
+    animation: devops 2s;
+}
+
+.docker {
+    width: 50%;
+    animation: docker 2s;
+}
+
+.kubernetes {
+    width: 40%;
+    animation: kubernetes 2s;
+}
+
+.git-github {
+    width: 70%;
+    animation: git-github 2s;
+}
+
+.linux {
+    width: 50%;
+    animation: linux 2s;
+}
+
+.ccpp {
+    width: 75%;
+    animation: ccpp 2s;
+}
+
+.java {
+    width: 40%;
+    animation: java 2s;
+}
+
+.python {
+    width: 30%;
+    animation: python 2s;
+}
+
+.javascript {
+    width: 65%;
+    animation: javascript 2s;
+}
+
+.html-css {
+    width: 90%;
+    animation: html-css 2s;
+}
+
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes express {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes node {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes mongodb {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes mysql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes nginx {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes azure {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+@keyframes devops {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes docker {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes kubernetes {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes git-github {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes linux {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes ccpp {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes html-css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
