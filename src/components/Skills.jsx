@@ -9,45 +9,45 @@ const Skills = () => {
 
         <div className="skills">
             <h3 className="sub-heading">Languages and Frameworks</h3>
+            
             <li>
-                <h3>C/C++</h3><span class="bar"><span class="ccpp"></span></span>
+            <h3>JavaScript</h3><span class="bar"><span class="javascript"></span></span>
+            </li>
+            
+            
+            <li>
+            <h3>React JS</h3><span class="bar"><span class="react"></span></span>
             </li>
             
             <li>
-                <h3>HTML/CSS</h3><span class="bar"><span class="html-css"></span></span>
+            <h3>Express JS</h3><span class="bar"><span class="express"></span></span>
             </li>
             
             <li>
-                <h3>JavaScript</h3><span class="bar"><span class="javascript"></span></span>
+            <h3>Node</h3><span class="bar"><span class="node"></span></span>
+            </li>
+            <li>
+            <h3>Java</h3><span class="bar"><span class="java"></span></span>
+            </li>
+            <li>
+            <h3>C/C++</h3><span class="bar"><span class="ccpp"></span></span>
             </li>
             
             <li>
-                <h3>Java</h3><span class="bar"><span class="java"></span></span>
+            <h3>HTML/CSS</h3><span class="bar"><span class="html-css"></span></span>
             </li>
-
+            
             <li>
-                <h3>React JS</h3><span class="bar"><span class="react"></span></span>
+            <h3>MongoDB</h3><span class="bar"><span class="mongodb"></span></span>
             </li>
-
+            
             <li>
-                <h3>Express JS</h3><span class="bar"><span class="express"></span></span>
+            <h3>MySQL</h3><span class="bar"><span class="mysql"></span></span>
             </li>
-
-            <li>
-                <h3>Node</h3><span class="bar"><span class="node"></span></span>
-            </li>
-
-            <li>
-                <h3>MongoDB</h3><span class="bar"><span class="mongodb"></span></span>
-            </li>
-
-            <li>
-                <h3>MySQL</h3><span class="bar"><span class="mysql"></span></span>
-            </li>
-
-        </div>
-
-        <div className="skills">
+            
+            </div>
+            
+            <div className="skills">
             <h3 className="sub-heading">Other Skills</h3>
             <li>
                 <h3>Nginx</h3><span class="bar"><span class="nginx"></span></span>
