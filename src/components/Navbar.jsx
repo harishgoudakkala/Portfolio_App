@@ -51,7 +51,7 @@ const Navbar = () => {
             </button>
             <div className={menuOpen ? 'nav_container active' : 'nav_container'}>
                 <div className='nav_item'><Link to='#Home' scroll={(el) => scrollTo(el)} onClick={() => setMenuOpen(!menuOpen)}>Home</Link></div>
-                <div className='nav_item'><Link to='#Aboutme' scroll={(el) => scrollTo(el)} onClick={() => setMenuOpen(!menuOpen)}>My&nbsp;Journey</Link></div>
+                <div className='nav_item'><Link to='#MyJourney' scroll={(el) => scrollTo(el)} onClick={() => setMenuOpen(!menuOpen)}>My&nbsp;Journey</Link></div>
                 <div className='nav_item'><Link to='#Projects' scroll={(el) =>scrollTo(el)} onClick={() => setMenuOpen(!menuOpen)}>Projects</Link></div>
                 <div className='nav_item'><Link to='#ContactMe' scroll={(el) => scrollTo(el)} onClick={() => setMenuOpen(!menuOpen)}>Contact&nbsp;Me</Link></div>
             </div>

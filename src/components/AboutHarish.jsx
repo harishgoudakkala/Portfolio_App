@@ -5,7 +5,7 @@ import "../styles/Aboutme.css"
 
 const AboutHarish = ()=>{
     return(
-        <section id="Aboutme">
+        <section id="MyJourney">
         <h2 className="heading">My Journey</h2>
         <div class="timeline">
         <div class="outer">
