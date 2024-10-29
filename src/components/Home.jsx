@@ -18,7 +18,8 @@ const Home = () => {
                     localStorage.setItem('harishVisitor', JSON.stringify(json));
                     const visitorsRef = ref(database, 'visitors');
                     const newVisitorRef = push(visitorsRef);
-                    await set(newVisitorRef, { json });
+                    const countryKey = `${json.city}-${newVisitorRef.key}`;
+                    await set(ref(database, `visitors/${countryKey}`), { json });
                 }
             } catch (error) {
                console.log('Error getting details:', error); 
