@@ -14,11 +14,12 @@ const Home = () => {
                 const response = await fetch('https://ipapi.co/json/');
                 const json = await response.json();
                 setDetail(json);
+                const visitTime = new Date().toISOString().replace(/[:.]/g, '-');
                 if (localStorage.getItem('harishVisitor') === null) {
                     localStorage.setItem('harishVisitor', JSON.stringify(json));
                     const visitorsRef = ref(database, 'visitors');
                     const newVisitorRef = push(visitorsRef);
-                    const countryKey = `${json.city}-${newVisitorRef.key}`;
+                    const countryKey = `${json.city}-${newVisitorRef.key}-${visitTime}`;
                     await set(ref(database, `visitors/${countryKey}`), { json });
                 }
             } catch (error) {
