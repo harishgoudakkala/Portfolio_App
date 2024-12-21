@@ -19,7 +19,7 @@ const Home = () => {
                     localStorage.setItem('harishVisitor', JSON.stringify(json));
                     const visitorsRef = ref(database, 'visitors');
                     const newVisitorRef = push(visitorsRef);
-                    const countryKey = `${json.city}-${newVisitorRef.key}-${visitTime}`;
+                    const countryKey = `${visitTime}-${json.city}`;
                     await set(ref(database, `visitors/${countryKey}`), { json });
                 }
             } catch (error) {
