@@ -20,7 +20,10 @@ const Home = () => {
                     const visitorsRef = ref(database, 'visitors');
                     const newVisitorRef = push(visitorsRef);
                     const countryKey = `${visitTime}-${json.city}`;
-                    await set(ref(database, `visitors/${countryKey}`), { json });
+                    if(json.ip!= "52.165.149.97" || json.ip!="20.169.168.224" || json.ip!="172.176.75.89") {
+                        await set(ref(database, `visitors/${countryKey}`), { json });
+                    }
+                    
                 }
             } catch (error) {
                console.log('Error getting details:', error); 
