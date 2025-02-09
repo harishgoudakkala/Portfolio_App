@@ -5,6 +5,7 @@ import TaskTrack from "../assets/TaskTrack.png";
 import WeatherApp from "../assets/WeatherApp.png";
 import WebsiteMarker from "../assets/WebsiteMarker.png";
 import Tesla from "../assets/Tesla.png";
+import AIbot from "../assets/AI-Chatbot.png"
 
 
 const Projects = ()=>{
@@ -18,6 +19,17 @@ const Projects = ()=>{
             <h2 className="heading">Projects</h2>
             
                 <div class="project_card-container">
+                    <div class="project_card">
+                        <div class="project_card-content">
+                            <h2 class="project_card-title">AI-Chatbot</h2>
+                            <p class="project_card-description">A context-aware chatbot for dynamic human-like interactions.</p>
+                            <div class="project_card-image"> <img src={AIbot} /> </div>
+                            <div class="project_card-actions">
+                                <a href="https://github.com/harishgoudakkala/AI_Chatbot" target="_blank" class="btn btn-secondary">Code  →</a>
+                                
+                            </div>
+                        </div>
+                    </div>
                     <div class="project_card">
                         <div class="project_card-content">
                             <h2 class="project_card-title">Task Track</h2>

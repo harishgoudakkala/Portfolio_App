@@ -83,12 +83,7 @@ const ContactMe = () => {
                         <li><a href="https://www.linkedin.com/in/akkala-harish-goud-916bb1242/" target="_blank" rel="noopener noreferrer" className="contact-icon">
                             <i className="fa-brands fa-linkedin"></i></a>
                         </li>
-                        <li><a href="https://www.instagram.com/_harish._007_" target="_blank" rel="noopener noreferrer" className="contact-icon">
-                            <i className="fa-brands fa-instagram"></i></a>
-                        </li>
-                        <li><a href="https://x.com/_the__monarch_" target="_blank" rel="noopener noreferrer" className="contact-icon">
-                            <i className="fa-brands fa-twitter"></i></a>
-                        </li>
+                        
                         </ul>
                         <hr />
                     </div>
