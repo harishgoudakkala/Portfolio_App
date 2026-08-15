@@ -146,6 +146,38 @@ li {
     animation: html-css 2s;
 }
 
+.python {
+    width: 80%;
+}
+
+.pandas {
+    width: 75%;
+}
+
+.visualization {
+    width: 70%;
+}
+
+.sklearn {
+    width: 75%;
+}
+
+.machine-learning {
+    width: 70%;
+}
+
+.knn-dt {
+    width: 70%;
+}
+
+.random-forest {
+    width: 70%;
+}
+
+.boosting {
+    width: 65%;
+}
+
 @keyframes react {
     0% {
         width: 0%;

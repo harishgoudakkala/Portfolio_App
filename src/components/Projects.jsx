@@ -6,6 +6,7 @@ import WeatherApp from "../assets/WeatherApp.png";
 import WebsiteMarker from "../assets/WebsiteMarker.png";
 import Tesla from "../assets/Tesla.png";
 import AIbot from "../assets/AI-Chatbot.png"
+import Churn from "../assets/churn.png"
 
 
 const Projects = ()=>{
@@ -19,6 +20,33 @@ const Projects = ()=>{
             <h2 className="heading">Projects</h2>
             
                 <div class="project_card-container">
+                    <div class="project_card">
+                        <div class="project_card-content">
+                            <h2 class="project_card-title">
+                                Customer Churn Prediction
+                            </h2>
+
+                            <p class="project_card-description">
+                                A machine learning project that analyzes telecom customer data and predicts customer churn using Python and Scikit-learn.
+                            </p>
+
+                            <div class="project_card-image">
+                                <img src={Churn} />
+                            </div>
+
+                            <div class="project_card-actions">
+                                <a
+                                    href="https://github.com/harishgoudakkala/People_Churn_-Prediction"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    class="btn btn-secondary"
+                                >
+                                    Code →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project_card">
                         <div class="project_card-content">
                             <h2 class="project_card-title">AI-Chatbot</h2>
@@ -72,7 +100,7 @@ const Projects = ()=>{
                         </div>
                     </div>
                 </div>
-                <div class="project_card">
+                {/*<div class="project_card">
                     <div class="project_card-content">
                         <h2 class="project_card-title">Go Meme</h2>
                         <p class="project_card-description">Create and share memes effortlessly with a simple yet powerful meme generator.</p>
@@ -81,7 +109,7 @@ const Projects = ()=>{
                             <a href="https://github.com/harishgoudakkala/Go-Meme" target="_blank" class="btn btn-secondary">Code  →</a>
                         </div>
                     </div>
-                </div>
+    </div>*/}
                 </div>
             
         </section>
