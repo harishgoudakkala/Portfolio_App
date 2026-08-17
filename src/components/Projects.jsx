@@ -11,8 +11,8 @@ import Churn from "../assets/churn.png"
 
 const Projects = ()=>{
 
-    const handleVisit = ()=>{
-        window.open("https://task-track-five.vercel.app/");
+    const handleVisit = (url)=>{
+        window.open(url);
     }
 
     return(
@@ -54,6 +54,7 @@ const Projects = ()=>{
                             <div class="project_card-image"> <img src={AIbot} /> </div>
                             <div class="project_card-actions">
                                 <a href="https://github.com/harishgoudakkala/AI_Chatbot" target="_blank" class="btn btn-secondary">Code  →</a>
+                                <button class="btn btn-primary" onClick={()=>{handleVisit("https://ai-chatbotz.netlify.app/")}}>Visit <span style={{color:"#000000"}}>&#8599;</span></button>
                                 
                             </div>
                         </div>
@@ -65,7 +66,7 @@ const Projects = ()=>{
                             <div class="project_card-image"> <img src={TaskTrack} /> </div>
                             <div class="project_card-actions">
                                 <a href="https://github.com/harishgoudakkala/Task-Track" target="_blank" class="btn btn-secondary">Code  →</a>
-                                <button class="btn btn-primary" onClick={handleVisit}>Visit <span style={{color:"#000000"}}>&#8599;</span></button>
+                                <button class="btn btn-primary" onClick={() => {handleVisit("https://task-track-five.vercel.app/")}}>Visit <span style={{color:"#000000"}}>&#8599;</span></button>
                             </div>
                         </div>
                     </div>
